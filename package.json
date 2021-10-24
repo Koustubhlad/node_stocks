@@ -1,0 +1,23 @@
+{
+  "name": "node_stocks",
+  "version": "1.0.0",
+  "description": "node stocks clone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Koustubhlad/node_stocks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Koustubhlad/node_stocks/issues"
+  },
+  "homepage": "https://github.com/Koustubhlad/node_stocks#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
