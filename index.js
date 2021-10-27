@@ -1,4 +1,6 @@
 const cli = require("./cli");
+const portFolio = require("./portfolio");
+
 const log = console.log;
 log("Running stocks app");
 log("=======================");
@@ -18,28 +20,30 @@ function Menu() {
 
     switch (cli.readInt("->")) {
         case 1:
-            Purdchase();
+            portFolio.Purdchase();
+            Menu();
             break;
         case 2:
             sell();
+            Menu();
             break;
         case 3:
             transactions();
+            Menu();
             break;
         case 4:
-            list();
+            portFolio.List();
+            Menu();
             break;
         case 5:
             calculate();
+            Menu();
             break;
         case 6:
             break;
     }
 }
 
-function Purdchase() {
-    log("purchasing.....")
-}
 
 function sell() {
     log("selling.....")
@@ -49,12 +53,10 @@ function transactions() {
     log("transaction of all stocks.....")
 }
 
-function list() {
-    log("list of all stocks.....")
-}
 
 function calculate() {
     log("Profit loss calculation.....")
 }
 
+portFolio.Init();
 Menu();
